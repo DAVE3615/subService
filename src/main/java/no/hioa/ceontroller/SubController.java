@@ -14,7 +14,7 @@ import org.springframework.web.bind.annotation.RestController;
 public class SubController {
 
     @RequestMapping(value = "/{num1}/{num2}", method = RequestMethod.GET, produces = MediaType.APPLICATION_JSON_VALUE)
-    public String add(@PathVariable int num1,
+    public String sub(@PathVariable int num1,
                       @PathVariable int num2){
 
         return Integer.toString( num1 - num2 );
